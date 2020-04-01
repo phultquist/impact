@@ -30,7 +30,7 @@
 			*{
 				font-family: georgia;
 			}
-			h1, #desc{
+			h1{
 				/* color:gray; */
 				/* font-style:italic; */
 				font-weight:lighter;
@@ -38,6 +38,11 @@
 				width: 50%;
 				margin: 0 auto;
 				margin-top:50px;
+			}
+			.small{
+				width: 50%;
+				margin: 0 auto;
+				margin-top:30px;
 			}
 			.caption{
 				font-style: italic;
@@ -67,60 +72,68 @@
 
 			div.desc {
 				padding: 15px;
-				text-align: center;
+				padding-top: 5px;
+				/* text-align: center; */
+			}
+
+			h3{
+				font-weight: lighter;
+				/* padding-top: -5px; */
 			}
 			
 		</style>
 	</head>
 	<body>
     <h1>IMPACT Blog</h1>
-		<p id="desc">
-			Basic Header
+		<p class="small">
+			A collection of data journalism articles, written and curated by the IMSA IMPACT team.
 		</p>
+		<br>
 		<div id="collection" class="grid-contatiner">
 			<div class="preview grid-item">
 				<a>
 					<img src="assets/previewimage.jpg">
 				</a>
-				<div class="desc">Article Title</div>
+				<div class="desc">
+					<h3>Archan's Article</h3>
+					Short preview...
+				</div>
 			</div>
 			<div class="preview grid-item">
 				<a>
 					<img src="assets/previewimage.jpg">
 				</a>
-				<div class="desc">Article Title</div>
+				<div class="desc">
+					<h3>Archan's Article</h3>
+					Really long preview to prove layout capabilities lorem ipsum dolor...
+				</div>
 			</div>
 			<div class="preview grid-item">
 				<a>
 					<img src="assets/previewimage.jpg">
 				</a>
-				<div class="desc">Article Title</div>
+				<div class="desc">
+					<h3>Archan's Article</h3>
+					Short preview...
+				</div>
 			</div>
 			<div class="preview grid-item">
 				<a>
 					<img src="assets/previewimage.jpg">
 				</a>
-				<div class="desc">Article Title</div>
+				<div class="desc">
+					<h3>Archan's Article</h3>
+					Short preview...
+				</div>
 			</div>
 		</div>
 		
 	<script>
 		
-		// var div = $("#images");
-		// for (i = 1; i<=30; i++){
-		// 	var newImg = document.createElement("img");
-		// 	var newDiv = document.createElement("div");
-		// 	var caption = document.createElement("p");
-		// 	caption.innerHTML = "Test";
-		// 	caption.setAttribute("class","caption");
-		// 	newDiv.setAttribute("class", "i");
-		// 	newImg.setAttribute("src", "assets/"+i+".jpeg");
-		// 	newImg.setAttribute("width", "100%");
-		// 	newDiv.append(newImg);
-		// 	newDiv.append(caption);
-		// 	div.append(newDiv);
-		// 	console.log();
-		// }
+		var buildPreview = function(title, img, desc){
+			
+		}
+
 	</script>
 	</body>
 </html>
