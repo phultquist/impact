@@ -27,7 +27,10 @@
 				height: 80px;
 				box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 			}
-			h1, #desc{
+			*{
+				font-family: georgia;
+			}
+			h1{
 				/* color:gray; */
 				/* font-style:italic; */
 				font-weight:lighter;
@@ -36,38 +39,101 @@
 				margin: 0 auto;
 				margin-top:50px;
 			}
-
+			.small{
+				width: 50%;
+				margin: 0 auto;
+				margin-top:30px;
+			}
 			.caption{
 				font-style: italic;
 				font-family: georgia;
 				color:#AAAAAA;
 				font-weight:100;
 			}
+			#collection{
+				width: 50%;
+				margin: 0 auto;
+			}
+			div.preview {
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 180px;
+			}
+
+			div.preview:hover {
+				border: 1px solid #777;
+			}
+
+			div.preview img {
+				width: 100%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				padding-top: 5px;
+				/* text-align: center; */
+			}
+
+			h3{
+				font-weight: lighter;
+				/* padding-top: -5px; */
+			}
+			
 		</style>
 	</head>
 	<body>
     <h1>IMPACT Blog</h1>
-		<p id="desc">
-			Basic Header
+		<p class="small">
+			A collection of data journalism articles, written and curated by the IMSA IMPACT team.
 		</p>
-		<div id="images">
+		<br>
+		<div id="collection" class="grid-contatiner">
+			<div class="preview grid-item">
+				<a>
+					<img src="assets/previewimage.jpg">
+				</a>
+				<div class="desc">
+					<h3>Archan's Article</h3>
+					Short preview...
+				</div>
+			</div>
+			<div class="preview grid-item">
+				<a>
+					<img src="assets/previewimage.jpg">
+				</a>
+				<div class="desc">
+					<h3>Archan's Article</h3>
+					Really long preview to prove layout capabilities lorem ipsum dolor...
+				</div>
+			</div>
+			<div class="preview grid-item">
+				<a>
+					<img src="assets/previewimage.jpg">
+				</a>
+				<div class="desc">
+					<h3>Archan's Article</h3>
+					Short preview...
+				</div>
+			</div>
+			<div class="preview grid-item">
+				<a>
+					<img src="assets/previewimage.jpg">
+				</a>
+				<div class="desc">
+					<h3>Archan's Article</h3>
+					Short preview...
+				</div>
+			</div>
 		</div>
+		
 	<script>
-		// var div = $("#images");
-		// for (i = 1; i<=30; i++){
-		// 	var newImg = document.createElement("img");
-		// 	var newDiv = document.createElement("div");
-		// 	var caption = document.createElement("p");
-		// 	caption.innerHTML = "Test";
-		// 	caption.setAttribute("class","caption");
-		// 	newDiv.setAttribute("class", "i");
-		// 	newImg.setAttribute("src", "assets/"+i+".jpeg");
-		// 	newImg.setAttribute("width", "100%");
-		// 	newDiv.append(newImg);
-		// 	newDiv.append(caption);
-		// 	div.append(newDiv);
-		// 	console.log();
-		// }
+		
+		var buildPreview = function(title, img, desc){
+			
+		}
+
 	</script>
 	</body>
 </html>
