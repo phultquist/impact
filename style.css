@@ -52,14 +52,15 @@ h1{
     font-weight:100;
 }
 #collection{
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
+    justify-items: space-between center;
 }
 div.preview {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 180px;
+    width: 22%;
 }
 
 div.preview:hover {
