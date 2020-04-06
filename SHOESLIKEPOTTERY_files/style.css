@@ -1,0 +1,448 @@
+@charset "utf-8";
+/*
+Theme Name: SHOES LIKE POTTERY
+Theme URI: 
+Description: S.L.P Original Design
+Author: Taro Misako
+Version: 1.0
+*/
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;	
+}
+
+body {
+	color: #444;
+	background-color: #FFF;
+	font-size: 10px;
+	font-family: "Times New Roman","HiraMinProN-W3","ヒラギノ明朝 Pro W3",serif;
+	line-height: 16px;
+}
+
+h1,h2,h3,h4,h5 {
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+	display: block;
+}
+
+ul,li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #222;
+	text-decoration: underline;
+	overflow:hidden;
+	outline:none;
+}
+
+a:hover {
+	color: #CCC;
+	text-decoration: none;
+}
+
+p { margin: 0; padding: 0; border: none; }
+
+.clear { clear: both; }
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .clearfix {display: inline-block;} /* Hides from IE-mac \*/ * html .clearfix {height: 1%;} .clearfix {display: block;} /* End hide from IE-mac */
+
+#container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+/* ヘッダー ――――――――――――――――――――――――――――――――――――――――― */
+#header {
+	width: 960px;
+	height: 79px;
+	padding: 45px 0 45px 0;
+	text-align: center;
+}
+#header #logo {
+	width: 172px;
+	height: 65px;
+	margin: 0 auto;
+}
+
+/* メインスライド ――――――――――――――――――――――――――――――――――――――――― */
+#slides {
+	width: 960px;
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 65px;
+}
+#slides.top {
+	margin-bottom: 40px;
+}
+
+/* グローバルナビゲーション ――――――――――――――――――――――――――――――――――――――――― */
+ul#gnavi {
+	width: 910px;
+	height: 12px;
+	overflow: hidden;	
+	margin: 0 auto 40px 40px;
+}
+ul#gnavi.top {
+	margin: 0 0 70px 40px;
+}
+ul#gnavi li {
+	display: inline;
+	float: left;
+	margin-right: 40px;
+	margin-top: 1px;
+}
+ul#gnavi li.last {
+	margin-right: 0;
+}
+ul#gnavi li.language {
+	margin: 0 0 0 50px;
+}
+ul#gnavi li.fb {
+	margin: 0 0 0 20px;
+}
+
+
+/* 各ページタイトル&見出し ――――――――――――――――――――――――――――――――――――――――― */
+.title {
+	width: 760px;
+	margin: 0 0 65px 130px;
+}
+.title.photo_gallery {
+	margin-bottom: 10px;
+}
+.title.pt40 {
+	padding-top: 40px;
+}
+.title.mb200 {
+	margin-bottom: 200px;
+}
+.title .left {
+	width: 160px;
+	float: left;
+}
+.title .left h1 {
+	padding-top: 6px;
+}
+.title .left h3 {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: 'Arial', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', Osaka, sans-serif;
+	letter-spacing: 0.7px;
+	margin-bottom: 20px;
+}
+.title .left ul.archives {
+	margin-bottom: 50px;
+}
+.title .left ul.archives li {
+	font-size: 11px;
+	margin-bottom: 5px;
+	letter-spacing: 1px;
+}
+.title .right {	
+	width: 580px;
+	float: right;
+	font-size: 13px;
+	line-height: 250%;
+}
+.title .right.moonstar {
+	margin-top: -6px;
+	margin-bottom: 20px;
+}
+.title .right h3.en { 
+	font-family: 'Arial', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', Osaka, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-bottom: 25px;
+}	
+.title .right.blog {
+	font-size: 13px;
+}
+.title .right.blog h2 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.title .right.blog .date {
+	font-size: 11px;
+	letter-spacing: 1px;
+	margin-bottom: 40px;
+}
+.title .right.blog img {
+	margin-bottom: 20px;
+}
+.title .right.blog .blog_footer {
+	width: 60px;	
+	height: 60px;
+	display: block;
+	background-image: url("img/common/line_dot.gif");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	margin-bottom: 80px;
+}
+.title .right.blog .blog_navi {
+	width: 580px;
+	margin-bottom: 40px;
+	font-size: 11px;
+	letter-spacing: 1px;
+}
+.title .right.blog .blog_navi .navi_left {
+	float: left;
+}
+.title .right.blog .blog_navi .navi_right {
+	float: right;
+}
+
+/* 本文 ――――――――――――――――――――――――――――――――――――――――― */	
+.content {
+	font-size: 14px;
+	line-height: 180%;
+	width: 580px;
+	padding-left: 310px;
+	margin-bottom: 80px;
+}
+.stores {
+	padding-left: 40px;
+}
+
+.store-locator {
+	width: 760px;
+	margin: 0 0 50px 130px;
+	font-family: 'Arial', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', Osaka, sans-serif;
+	font-weight: bold;
+}
+
+.store-locator ul.country {
+	width: 760px;
+	background-image: url("img/common/line_dot.gif");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	padding-bottom: 15px;
+	margin-bottom: 50px;
+	line-height: 100%;
+}
+
+.store-locator ul.country li {
+	float: left;
+	font-size: 13px;
+	margin-right: 40px;
+}
+
+.store-2line {
+	width: 800px;
+	margin-left: -40px;
+	font-size: 13px;
+	line-height: 160%;
+	font-family: "Times New Roman","HiraMinProN-W3","ヒラギノ明朝 Pro W3",serif;
+	font-weight: normal;
+}
+
+.store-2line .stores {
+	width: 360px;
+	float: left;
+	padding-left: 40px;
+	margin-bottom: 45px;
+}
+
+.store-2line .stores h3, .store-country {
+	font-family: 'Arial', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', Osaka, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}	
+
+.store-country {
+	margin-bottom: 40px;
+}
+
+.store-endline {
+	width: 760px;
+	height: 1px;
+	background-image: url("img/common/line_dot.gif");
+	background-repeat: repeat-x;
+	background-position: left top;
+	margin-bottom: 70px;
+}
+
+
+/* キャプション ――――――――――――――――――――――――――――――――――――――――― */
+.caption {
+	width: 760px;
+	margin: 0 0 0 70px;
+}
+.caption .left {
+	width: 280px;
+	float: left;
+	padding-bottom: 70px;
+}
+.caption .left.last {
+	padding-bottom: 80px;
+}
+.caption .left .slides {
+	width: 280px;
+	height: 187px;
+	overflow: hidden;
+}
+.caption .left .slides.pointer {
+	cursor: pointer;
+}
+.caption .right {
+	font-size: 13px;
+	line-height: 180%;
+	width: 400px;
+	float: right;
+	padding-bottom: 70px;
+}
+.caption .right.last {
+	padding-bottom: 80px;
+}
+.caption .right h2 {
+	padding-top: 13px;
+	margin-bottom: 35px;
+}
+
+/* PRODUCTSページ「COLOR」部分 ――――――――――――――――――――――――――――――――――――――――― */
+.colors {
+	width: 960px;
+	margin: 0 0 80px 0;
+}
+.colors .left {
+	width: 410px;
+	float: left;
+	margin-bottom: 50px;
+	text-align: right;
+}
+.colors .left img {
+	float: right;
+}
+.colors .right {
+	width: 410px;
+	float: right;
+	margin-bottom: 50px;
+	text-align: left;
+}
+.colors .right img {
+	float: left;
+}
+.colors.low .left {
+	width:286px;
+	float: left;
+}
+.colors.low .center {
+	width:226px;
+	margin: 0 81px 0 81px;
+	float: left;
+}
+.colors.low .right {
+	width:286px;
+	float: right;
+}
+.colors .text {
+	width: 960px;
+	text-align: center;
+	font-family: 'Arial', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', Osaka, sans-serif;
+	font-size: 11px;	
+	letter-spacing: 1px;
+}
+
+/* フォトギャラリー ――――――――――――――――――――――――――――――――――――――――― */
+#photo_gallery {
+	width: 820px;
+	height: 500px;
+	overflow: hidden;
+	margin: 0 auto 80px auto;
+	cursor: pointer;
+}
+
+/* スライド数字ナビゲーション ――――――――――――――――――――――――――――――――――――――――― */
+.nav {
+	font-family: 'Arial', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', Osaka, sans-serif;
+	width: 280px;
+	text-align: right;
+	padding-top: 12px;
+}
+.nav a {	
+	padding-left: 12px;
+	text-decoration: none;
+	color: #999;
+}
+.nav a:hover {		
+	color: #CCC;
+}
+.nav a.activeSlide {
+	color: #333;
+}
+.nav.photo_gallery {
+	width: 800px;
+	height: 16px;
+	margin-bottom: 12px;
+	float: left;	
+	display: inline;
+}
+#btn_gallery {
+	width: 38px;
+	height: 16px;
+	padding-top: 11px;
+	margin-left: 20px;
+	float: left;	
+	display: inline;	
+}
+#btn_gallery .play {
+	width: 16px;
+	height: 16px;
+	margin-left: 6px;
+	float: right;
+	display: inline;
+	cursor: pointer;
+}
+#btn_gallery .play.on {
+	filter: alpha(opacity=20);
+	-moz-opacity:0.2;
+	opacity:0.2;
+}
+#btn_gallery .pause {
+	width: 16px;
+	height: 16px;
+	float: left;
+	display: inline;
+	cursor: pointer;
+}
+#btn_gallery .pause.on {
+	filter: alpha(opacity=20);
+	-moz-opacity:0.2;
+	opacity:0.2;
+}
+
+/* フッター ――――――――――――――――――――――――――――――――――――――――― */
+#footer {
+	width: 960px;	
+	background-image: url("img/common/line_dot.gif");
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding-top: 40px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+#footer.top {
+	padding-top: 0px;
+	background-image: none;
+}
+#footer #copyright {
+	margin: 0 auto;
+}

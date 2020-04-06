@@ -59,8 +59,8 @@ h1{
 div.preview {
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
-    width: 22%;
+    float: right;
+    width: 22.5%;
 }
 
 div.preview:hover {
